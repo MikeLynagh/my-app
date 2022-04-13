@@ -1,64 +1,92 @@
-/* font-family: 'Inter', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-
- */
-
 * {
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
 }
 
 body {
+	font-family: 'Karla', sans-serif;
 	margin: 0;
-	font-family: Inter, sans-serif;
-	background-color: #282d35;
 }
 
-nav {
+main {
+	padding: 36px;
+}
+
+.header {
 	display: flex;
 	align-items: center;
-	background-color: #21222a;
-	padding: 30px 25px;
-	height: 90px;
+	height: 65px;
+	background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+	color: white;
+	padding: 20px;
 }
 
-.nav--logo_text {
+.header--image {
+	height: 100%;
+	margin-right: 15px;
+}
+
+.header--title {
+	font-size: 20px;
 	margin-right: auto;
-	color: #61dafb;
-	font-size: 22;
 }
 
-.nav--title {
-	color: #deebf8;
-	font-weight: 600;
+.header--project {
+	font-size: 12px;
 }
 
-.title {
-	color: #ffffff;
-	margin: 0;
-	font-size: 39px;
+.form {
+	display: grid;
+	grid-template: 40px 40px / 1fr 1fr;
+	gap: 17px;
+	margin-bottom: 17px;
 }
 
-.ordered-list {
-	color: #ffffff;
-	margin-top: 45px;
-	max-width: 400px;
+.form--input {
+	font-family: "Karla", sans-serif;
+	border-radius: 5px;
+	border: 1px solid #D5D4D8;
+	text-indent: 5px;
 }
 
-.ordered-list > li {
-	line-height: 19px;
-	padding-block: 10px;
+.form--button {
+	grid-column: 1 / -1;
+	font-family: "Karla", sans-serif;
+	border-radius: 5px;
+	background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+	color: white;
+	border: none;
+	cursor: pointer;
 }
 
-.ordered-list > li::marker {
-	font-size: 1.5rem;
-	color: #61dafb;
+.meme {
+	position: relative;
 }
-main {
-	padding: 57px 27px;
-	background-image: url(./images/reactjs-icon\ 2.png);
-	background-repeat: no-repeat;
-	background-position: right 75%;
+
+.meme--image {
+	max-width: 100%;
+	border-radius: 3px;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    
+}
+
+.bottom {
+	bottom: 0;
+}
+
+.top {
+	top: 0;
 }
